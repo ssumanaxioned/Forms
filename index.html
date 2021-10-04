@@ -9,38 +9,52 @@
 <body>
   <section>
     <div class="wrapper">
-      <form autocomplete="off" action="index.html" method="post">
-        <label for="fName">First Name:
-          <input type="text" name="fName" id="fName" required>
-        </label>
-        <label for="lName">Last Name:
-          <input type="text" name="lName" id="lName" required>
-        </label>
-        <label for="gender">Gender:
-            <input type="radio" name="gender" id="male" value="male" required><label for="male">Male</label>
-            <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
-        </label>
-        <label for="address">Address:
-          <textarea name="address" rows="4" cols="80" required></textarea>
-        </label>
-        <label for="terms">
-          <input type="checkbox" name="terms" value="terms" required>
-          Terms and conditions
-        </label>
-        <button type="submit" name="submit">Submit</button>
-        <button type="reset" name="reset">Cancel</button>
+      <form autocomplete="off" onsubmit="onFormSubmit()">
+        <div class="input">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname">
+        </div>
+        <div class="input">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname">
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="gender">Female</label>
+        </div>
+        <div class="input">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" rows="8" cols="80"></textarea>
+        </div>
+        <div>
+          <input type="checkbox" name="terms">
+          <label for="terms">Terms and Condition</label>
+        </div>
+        <div class="form-button">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
       </form>
-      <table>
+      <table class="list" id="storeList">
         <thead>
-          <th>Name</th>
-          <th>Last Name</th>
-          <th>Gender</th>
-          <th>Address</th>
-          <th>Edit</th>
-          <th>Delete</th>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
         </thead>
+        <tbody>
+
+        </tbody>
       </table>
     </div>
   </section>
+  <script type="text/javascript" src="assets\js\script.js"></script>
 </body>
 </html>

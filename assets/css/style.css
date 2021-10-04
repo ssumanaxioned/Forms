@@ -202,7 +202,7 @@ li {
   width: 80%;
   padding: 1em;
   border: 1px solid black;
-  margin: 0 auto;
+  margin: 5em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,10 +215,30 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items:flex-start;
   gap: 1em;
 }
 
+div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+label { margin-right: 1em; }
+input[type="text"] { width: 400px; }
+textarea{ width: 400px; }
+.input{ justify-content: space-between;}
+
+.form-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
 table {
   width: 80%;
   border-collapse: collapse;
