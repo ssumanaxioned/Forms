@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title></title>
+</head>
+<body>
+  <section>
+    <div class="wrapper">
+      <form autocomplete="off" action="index.html" method="post">
+        <label for="fName">First Name:
+          <input type="text" name="fName" id="fName" required>
+        </label>
+        <label for="lName">Last Name:
+          <input type="text" name="lName" id="lName" required>
+        </label>
+        <label for="gender">Gender:
+            <input type="radio" name="gender" id="male" value="male" required><label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+        </label>
+        <label for="address">Address:
+          <textarea name="address" rows="4" cols="80" required></textarea>
+        </label>
+        <label for="terms">
+          <input type="checkbox" name="terms" value="terms" required> 
+          Terms and conditions
+        </label>
+        <button type="submit" name="submit">Submit</button>
+        <button type="reset" name="reset">Cancel</button>
+      </form>
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </thead>
+      </table>
+    </div>
+  </section>
+</body>
+</html>
